@@ -1,8 +1,4 @@
-Single Sign-On for PHP (Ajax compatible)
----
-
-Jasny\SSO is a relatively simply and straightforward solution for an single sign on (SSO) implementation. With SSO,
-logging into a single website will authenticate you for all affiliate sites.
+A fork of Jasny\SSO with cookie support.
 
 #### How it works
 
@@ -65,7 +61,7 @@ class MySSOServer extends Jasny\SSO\Server
     {
         ...
     }
-    
+
     /**
      * Get the secret key and other info of a broker
      *
@@ -76,7 +72,7 @@ class MySSOServer extends Jasny\SSO\Server
     {
         ...
     }
-    
+
     /**
      * Get the information about a user
      *
