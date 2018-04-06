@@ -1,5 +1,6 @@
 <?php
-namespace Jasny\SSO;
+
+namespace tw88\SSO;
 
 /**
  * Exception thrown when a request is done while no session is attached
@@ -7,5 +8,4 @@ namespace Jasny\SSO;
  */
 class NotAttachedException extends Exception
 {
-
 }

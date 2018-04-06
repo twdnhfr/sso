@@ -1,6 +1,6 @@
 <?php
 
-namespace Jasny\SSO;
+namespace tw88\SSO;
 
 /**
  * Single sign-on broker.
