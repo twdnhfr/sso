@@ -1,6 +1,6 @@
 <?php
 
-namespace Jasny\SSO;
+namespace tw88\SSO;
 
 use Desarrolla2\Cache\Cache;
 use Desarrolla2\Cache\Adapter;

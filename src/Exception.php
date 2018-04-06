@@ -1,5 +1,6 @@
 <?php
-namespace Jasny\SSO;
+
+namespace tw88\SSO;
 
 /**
  * SSO Exception
