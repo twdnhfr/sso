@@ -197,24 +197,17 @@ abstract class Server
      */
     protected function detectReturnType()
     {
-        if (!empty($_GET['return_url'])) {
-            $this->returnType = 'redirect';
-        }
-
-        if (!empty($_GET['callback'])) {
-            $this->returnType = 'jsonp';
-        }
-
-        if (strpos($_SERVER['HTTP_ACCEPT'], 'image/') !== false) {
-            $this->returnType = 'image';
-        }
-
-        if (strpos($_SERVER['HTTP_ACCEPT'], 'application/json') !== false) {
-            $this->returnType = 'json';
-        }
-
         if (isset($_GET['cookie'])) {
             $this->returnType = 'none';
+            return;
+        } elseif (!empty($_GET['return_url'])) {
+            $this->returnType = 'redirect';
+        } elseif (!empty($_GET['callback'])) {
+            $this->returnType = 'jsonp';
+        } elseif (strpos($_SERVER['HTTP_ACCEPT'], 'image/') !== false) {
+            $this->returnType = 'image';
+        } elseif (strpos($_SERVER['HTTP_ACCEPT'], 'application/json') !== false) {
+            $this->returnType = 'json';
         }
     }
 
