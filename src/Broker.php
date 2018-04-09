@@ -168,7 +168,7 @@ class Broker
      *
      * @param string|true $returnUrl  The URL the client should be returned to after attaching
      */
-    public function attach($returnUrl = null, $cookieBased = false)
+    public function attach($returnUrl = null, $cookieBased = true)
     {
         if ($this->isAttached()) {
             return;
