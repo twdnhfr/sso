@@ -129,7 +129,7 @@ class Broker
      */
     public function clearToken()
     {
-        setcookie($this->getCookieName(), null, 1, '/');
+        setcookie($this->getCookieName(), "", time() - 3600);
         $this->token = null;
     }
 
